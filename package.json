@@ -9,7 +9,7 @@
   "author": "geoff W",
   "scripts": {
     "start": "SET NODE_ENV=development & start-storybook -p 9001 -c .storybook",
-    "test": "jest --coverage --verbose",
+    "test": "jest --coverage --verbose || true",
     "bootstrap": "lerna bootstrap",
     "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
     "build-storybook": "build-storybook",
@@ -28,6 +28,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "glob-loader": "^0.3.0",
     "jest": "^21.2.1",
     "lerna": "^2.5.1",
@@ -68,6 +69,9 @@
     ],
     "testPathIgnorePatterns": [
       "<rootDir>node_modules/"
+    ],
+    "setupFiles": [
+      "<rootDir>/setupTests.js"
     ]
   }
 }

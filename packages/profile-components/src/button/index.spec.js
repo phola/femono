@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 
 import Button from '.'
 
-describe('Button Component', function () {
+describe('Profile Button Component', function () {
   it('renders without props', function () {
     const wrapper = mount(<Button />)
     const button = wrapper.find('button')
