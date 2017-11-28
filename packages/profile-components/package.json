@@ -1,12 +1,12 @@
 {
-    "name": "components",
+    "name": "profile-components",
     "version": "0.1.0-0",
     "description": "Base components",
     "main": "dist/index.js",
     "module": "src/index.js",
     "author": "Geoff W",
     "dependencies": {
-        "react": "^16.1.1",
-        "styled-components": "^2.2.3"
+        "components": "^0.1.0-0",
+        "react": "^16.1.1"
     }
 }
